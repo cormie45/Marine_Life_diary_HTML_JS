@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(57, 43, 91, 0.68);
+  }
+
+#diary-entry-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 30vh;
+    min-width: 90vh;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border: 3px solid black;
+    border-style: ridge;
+    background: rgba(0, 255, 238, 0.516);
+}
+  
+  .form-item {
+    margin-right: 1.8rem;
+  }
+
+#sightings-diary {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  
+  .sightings-diary-item {
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border: 3px solid black;
+    border-radius: 7.5%;
+    background: rgba(0, 255, 238, 0.516);
+  }

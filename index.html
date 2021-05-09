@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Underwater Diary App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <h1 id="header">Dive Marine Life Tracker</h1>
+    <form id="diary-entry-form">
+        <div id="form-title">
+            <h2>Add Sighting</h2>
+        </div>
+        <div id="form-wrapper">
+            <div class="diary-item">
+                <label for="species">Species: </label>
+                <input type="text" id="species" required />
+            </div>
+            <div class="diary-item">
+                <label for="description">Description: </label>
+                <textarea name="description" id="description" cols="40" rows="5"></textarea>
+            </div>
+            <div class="diary-item">
+                <label for="divesite">Dive Site: </label>
+                <input type="text" id="divesite" required />
+            </div>
+            <div class="diary-item">
+                <label for="classification">Classification: </label>
+                <select id="classification">
+                    <option value="" disabled selected></option>
+                    <option value="Rare">Rare</option>
+                    <option value="Common">Common</option>
+                    <option value="Abundant">Abundant</option>
+                </select>
+            </div>
+            <div class="diary-item">
+                <label for="date">Date: </label>
+                <input type="date" id="date" required />
+            </div>
+        </div>
+        <br><br>
+        <input type="submit" value="Add to Diary" />
+    </form>
+    <h2>Sightings Diary</h2>
+    <ul id="sightings-diary"></ul>
+    <button id="delete-all">Delete All</button>
+</body>
+
+</html>
